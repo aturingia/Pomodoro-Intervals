@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flip Clock Temporizador</title>
+<link rel="shorcut icon" size="16x16 24x24 32x32 48x48" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="grid-container">
+  <header class="header">
+    <img src="logo.png" alt="logotipo" class="logo">
+  </header>
+  <div class="flip-clock">
+    <div class="grupo-uno">
+      <div class="interval" id="interval1">00</div>
+      <div class="interval" id="interval2">00</div>
+      <div class="interval" id="interval3">00</div>
+      <div class="interval" id="interval4">00</div>
+    </div>
+    <div class="grupo-dos">
+      <div class="interval" id="interval5">00</div>
+      <div class="interval" id="interval6">00</div>
+      <div class="interval" id="interval7">00</div>
+      <div class="interval" id="interval8">00</div>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="controls-uno">
+      <input type="number" id="intervalInput1" min="1" value="25"> work
+      <input type="number" id="intervalInput2" min="1" value="5"> break
+      <input type="number" id="intervalInput3" min="1" value="25"> work
+      <input type="number" id="intervalInput4" min="1" value="5"> break
+    </div>
+    <div class="controls-dos">
+      <input type="number" id="intervalInput5" min="1" value="25"> work
+      <input type="number" id="intervalInput6" min="1" value="5"> break
+      <input type="number" id="intervalInput7" min="1" value="25"> work
+      <input type="number" id="intervalInput8" min="1" value="15"> break
+    </div>
+  </div>
+  <div class="botones">
+    <button class="btn btn-5" id="startBtn">Start</button>
+    <button class="btn btn-5" id="stopBtn">Stop</button>
+    <button class="btn btn-5" id="resetBtn">Reset</button>
+    <button class="btn btn-5" id="updateBtn">Update</button>
+  </div>
+
+  <footer class="footer">&copy; <a rel="noopener" target="_blank"  href="https://github.com/dashboard" class="link-a">Pomodoro</footer>
+
+  <audio id="alarm">
+    <source src="alarma.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script src="main.js"></script>
+</body>
+</html>
